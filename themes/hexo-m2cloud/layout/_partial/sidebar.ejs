@@ -1,0 +1,41 @@
+
+
+<aside id="sidebar">
+<% if(is_current('doc')){ %>
+  <% _.each(theme.doc_sidebar, function(menu, title){ %>
+    <strong class="sidebar-title"><%= title %></strong>
+    <% _.each(menu, function(link, text){ %>
+      <a href="<%- config.root %>docs/<%= link %>" class="sidebar-link<% if (is_current('docs/' + link, true)){ %> current<% } %>"><%= text %></a>
+    <% }) %>
+  <% }) %>
+<% } %>
+
+<% if(is_current('embedded')){ %>
+  <% _.each(theme.embedded_sidebar, function(menu, title){ %>
+    <strong class="sidebar-title"><%= title %></strong>
+    <% _.each(menu, function(link, text){ %>
+      <a href="<%- config.root %>embedded/<%= link %>" class="sidebar-link<% if (is_current('embedded/' + link, true)){ %> current<% } %>"><%= text %></a>
+    <% }) %>
+  <% }) %>
+<% } %>
+
+<% if(is_current('tools')){ %>
+  <% _.each(theme.tools_sidebar, function(menu, title){ %>
+    <strong class="sidebar-title"><%= title %></strong>
+    <% _.each(menu, function(link, text){ %>
+      <a href="<%- config.root %>tools/<%= link %>" class="sidebar-link<% if (is_current('tools/' + link, true)){ %> current<% } %>"><%= text %></a>
+    <% }) %>
+  <% }) %>
+<% } %>
+
+<% if(is_current('iot')){ %>
+  <% _.each(theme.iot_sidebar, function(menu, title){ %>
+    <strong class="sidebar-title"><%= title %></strong>
+    <% _.each(menu, function(link, text){ %>
+      <a href="<%- config.root %>iot/<%= link %>" class="sidebar-link<% if (is_current('iot/' + link, true)){ %> current<% } %>"><%= text %></a>
+    <% }) %>
+  <% }) %>
+<% } %>
+
+</aside>
+

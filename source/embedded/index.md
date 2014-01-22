@@ -1,4 +1,4 @@
-title: Documentation
+title: Embeded
 next: setup
 ---
 欢迎来到我的博客。

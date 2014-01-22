@@ -1,14 +1,14 @@
 # Basic
-title: Hexo
+title: Hexo Blog
 subtitle: Node.js blog framework
 description: 
-url: http://zespia.tw/hexo
-author: SkyArrow
-email: tommy351@gmail.com
+url: http://m2cloud.github.io
+author: wynners 
+email: wynners.n@gmail.com
 language:
 
 # Permalink
-root: /hexo/
+root: /
 permalink: :category/:title/
 tag_dir: tags
 archive_dir: archives
@@ -24,7 +24,7 @@ tag: 2
 # Server
 # Hexo uses Connect to serve static files
 # Reference: http://www.senchalabs.org/connect/
-port: 4000
+port: 1234
 logger: false
 logger_format:
 
@@ -39,17 +39,17 @@ per_page: 0
 pagination_dir: page
 
 # Disqus
-disqus_shortname:
+disqus_shortname: m2cloud-github-io
 
 # Extensions
 plugins:
-theme: hexo3
+theme: hexo-m2cloud
 exclude_generator:
 - category
 - tag
 - home
 - post
-- archive
+# - archive
 
 # Enhancement
 auto_spacing: false
@@ -64,5 +64,11 @@ highlight:
 # Read documentaion for more information
 deploy:
   type: github
-  repository: https://github.com/tommy351/hexo.git
-  branch: gh-pages
+  repository: https://github.com/m2cloud/m2cloud.github.io.git
+  branch: master
+
+  
+  # feed:
+  #  type: rss2
+  #  path: rss2.xml
+  #  limit: 20
